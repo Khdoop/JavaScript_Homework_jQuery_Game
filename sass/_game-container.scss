@@ -1,0 +1,38 @@
+#game-container {
+  height: $stage-height;
+  background-image: $stage-background-image;
+  overflow: hidden;
+  
+  .top-info {
+    padding-top: 10px;
+
+    .lives, .time, .score {
+      font-size: 18px;
+    }
+  }
+
+  #stage {
+    min-height: 550px;
+    position: relative;
+
+    #player {
+      position: absolute;
+      bottom: 10px;
+      left: 100px;
+
+    }
+
+    #enemy-bee {
+      position: absolute;
+      bottom: 150px;
+      right: -160px;
+    }
+
+    #enemy-slime {
+      position: absolute;
+      bottom: 10px;
+      right: -160px;
+    }
+  }
+
+}

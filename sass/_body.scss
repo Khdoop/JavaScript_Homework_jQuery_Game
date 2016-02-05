@@ -1,0 +1,18 @@
+@font-face {
+  font-family: $font-name;
+  src: $font-src;
+}
+
+body {
+  font-family: $font-name !important;
+  font-size: $body-font-size;
+
+  button {
+    border-radius: 0 !important;
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  color: $body-color !important;
+}

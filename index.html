@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alien for a day</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body class="bg-custom3">
+        <nav class="navbar navbar-default bg-custom3">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand a-custom1" href="https://github.com/Khdoop">My Github</a>
+                </div>
+                <div class="collapse navbar-collapse" id="my-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a class="a-custom1" href="#game-container">Game</a></li>
+                        <li><a class="a-custom1" href="#leaderboards">Leaderboards</a></li>
+                        <li><a class="a-custom1" href="index.html">Refresh</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="bg-custom1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 row">
+                        <div class="col-xs-3"></div>
+                        <div class="game-info panel panel-custom1 col-xs-6 text-center">
+                            <div class="panel-heading">
+                                <h2>Alien for a day</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h4>CONTROLS</h4>
+                                <h6>W jump</h6>
+                                <h6>S squat</h6>
+                                <h6 class="unfinished text-muted">P pause/start</h6>
+                                <button id="start" class="btn btn-custom1">START</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id="game-container">
+                <div class="top-info clearfix">
+                    <div class="lives col-xs-4 text-left text-custom1">
+                        <i class="fa fa-heartbeat fa-2x"></i>
+                        <span></span>
+                    </div>
+                    <div class="time col-xs-4 text-center text-custom2">
+                        <i class="fa fa-hourglass fa-2x"></i>
+                        <span>WIP</span>
+                    </div>
+                    <div class="score col-xs-4 text-right text-custom3">
+                        <i class="fa fa-star fa-2x"></i>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="stage">
+                    <div id="player">
+                        <img src="images/player-standby.png" alt="">
+                    </div>
+                    <div id="enemy-bee">
+                        <img src="images/enemy-bee.png" alt="">
+                    </div>
+                    <div id="enemy-slime">
+                        <img src="images/enemy-slime.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="leaderboards" class="bg-custom1 text-center">
+            <div class="container">
+                <h2>Leaderboards</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">#</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Time</th>
+                            <th class="text-center">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+        <footer id="footer" class="bg-custom3 text-center">
+            <h4>Click me plox.</h4>
+            <img class="rock img-responsive center-block" src="images/rock.png" alt="" selectable = "false" >
+            <br>
+            <br>
+            <br>
+            <h6>version 0.1</h6>
+        </footer>
+        <div class="modal fade custom" id="name-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" >
+                <div class="modal-content modal-custom1">
+                    <div class="modal-header">
+                        <h4 class="modal-title">GAME OVER</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" role="form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input id="name" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="submit-score" class="btn btn-custom1" type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio src="audio/bgm_action_4.mp3" loop></audio>
+    </body>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</html>

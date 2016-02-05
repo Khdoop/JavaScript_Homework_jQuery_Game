@@ -1,0 +1,112 @@
+.panel-custom1 .panel-heading {
+  background: #79BD9A; }
+.panel-custom1 .panel-body {
+  background: #a3d6a3; }
+
+.modal-custom1 .modal-header {
+  background: #79BD9A; }
+.modal-custom1 .modal-body {
+  background: #a3d6a3; }
+.modal-custom1 .modal-footer {
+  background: #a3d6a3; }
+
+.bg-custom1 {
+  background: #3B8686; }
+
+.bg-custom2 {
+  background: #79BD9A; }
+
+.bg-custom3 {
+  background: #0B486B; }
+
+.btn-custom1 {
+  background: #79BD9A; }
+  .btn-custom1:hover {
+    background: #5a9f7c;
+    color: whitesmoke; }
+  .btn-custom1:focus {
+    color: whitesmoke; }
+
+.a-custom1 {
+  color: whitesmoke !important; }
+  .a-custom1:hover {
+    color: #d2d2d2 !important; }
+
+.text-custom1 {
+  color: #9e0707; }
+
+.text-custom2 {
+  color: #0B486B; }
+
+.text-custom3 {
+  color: #ccab00; }
+
+.unfinished {
+  text-decoration: line-through; }
+
+@font-face {
+  font-family: PressStart2P;
+  src: url(../fonts/PressStart2P.ttf); }
+body {
+  font-family: PressStart2P !important;
+  font-size: 14px;
+  color: whitesmoke !important; }
+  body button {
+    border-radius: 0 !important; }
+    body button:focus {
+      outline: none !important; }
+
+nav {
+  background: #0B486B !important;
+  border-radius: 0 !important;
+  border: none !important;
+  margin-bottom: 0 !important; }
+
+header {
+  min-height: 500px; }
+  header .panel, header .panel-heading {
+    border-radius: 0 !important;
+    border: none !important; }
+  header .game-info {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 30px; }
+  header #start {
+    font-size: 40px; }
+
+#game-container {
+  height: 630px;
+  background-image: url("../images/background.png");
+  overflow: hidden; }
+  #game-container .top-info {
+    padding-top: 10px; }
+    #game-container .top-info .lives, #game-container .top-info .time, #game-container .top-info .score {
+      font-size: 18px; }
+  #game-container #stage {
+    min-height: 550px;
+    position: relative; }
+    #game-container #stage #player {
+      position: absolute;
+      bottom: 10px;
+      left: 100px; }
+    #game-container #stage #enemy-bee {
+      position: absolute;
+      bottom: 150px;
+      right: -160px; }
+    #game-container #stage #enemy-slime {
+      position: absolute;
+      bottom: 10px;
+      right: -160px; }
+
+#leaderboards {
+  min-height: 600px; }
+
+#footer {
+  min-height: 200px; }
+  #footer img {
+    cursor: pointer; }
+
+audio {
+  display: none; }
+
+/*# sourceMappingURL=index.css.map */
