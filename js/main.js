@@ -1,4 +1,4 @@
-(function() {
+$(function() {
     if (!(localStorage.getItem('players'))) localStorage.setItem('players',JSON.stringify([]));
     var backgroundCounter = 0;
     var stage = $('#stage');
@@ -221,4 +221,4 @@
         window.location.reload();
     });
 
-})();
+});
